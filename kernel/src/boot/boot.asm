@@ -4,12 +4,6 @@ BITS 16
 CODE_SEG equ gdt_code - gdt_start
 DATA_SEG equ gdt_data - gdt_start
 
-_start:
-    jmp short start
-    nop
-
- times 33 db 0
- 
 start:
     ;mov si, message
     ;call print
