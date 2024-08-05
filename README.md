@@ -2,7 +2,7 @@
 
 This project is an operating system kernel written in C and assembly language. It includes components such as a bootloader, paging system, heap manager, interrupt descriptor table (IDT), and VGA text mode output.
 
-Some of the IMPORTANT FUNCTIONS of the project have been described here :-
+Some of the **IMPORTANT FUNCTIONS** of the project have been described here :-
 
 ## Project Structure
 
