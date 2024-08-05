@@ -13,6 +13,7 @@ This project is an operating system kernel written in C and assembly language. I
 
 - **File**: `kernel.c`  
   The main kernel code that initializes VGA text mode, handles memory management, and sets up paging.
+- **`kernel.asm`**: A 32-bit assembly file that sets up the protected mode and jumps to the `kernel_main` function. It also initializes the data segment and stack, enables the A20 line, and prepares the system for running the kernel.
 
 ### Header Files
 
@@ -38,12 +39,13 @@ This project is an operating system kernel written in C and assembly language. I
 
 - **File**: `idt.c`  
   Sets up and initializes the IDT, including handling basic interrupts.
+- **`idt.asm`**: Contains assembly code for loading the Interrupt Descriptor Table (IDT) with the `idt_load` function.
 
 ### Paging
 
 - **File**: `paging.c`  
   Implements paging, including directory and table management, and provides functions for setting up paging and switching directories.
-
+- **`paging.asm`**: Contains assembly code for managing paging, including loading page directories and enabling paging.
 
 ## Functions and Components
 
