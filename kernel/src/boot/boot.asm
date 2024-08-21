@@ -28,7 +28,6 @@ step2:
     jmp CODE_SEG:load32
 
 ; print:
-;     mov bx, 0
 ; .loop:
 ;     lodsb
 ;     cmp al, 0
